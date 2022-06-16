@@ -1,0 +1,91 @@
+<!-- Entry page -->
+<!-- I created this page to demonstrate my knowledge with input and create some form of entry restriction since this page has personal information.
+ --><!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Entry</title>
+  <!-- From the template -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navigation bar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /*Add a gray background color and some padding to the footer*/
+    footer {
+      background-color: #B7F4E7;
+      padding: 25px;
+      position: absolute;
+      width:  100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<script>
+    // checks to see if the inported password is the correct one
+    function checkpassword(){
+        var password = document.getElementById("password");
+        var passwordEntered = password.value;
+        if(passwordEntered == 'coding'){
+            return true;
+        }
+        // If it is incorrect it will display red text saying the code isn't recognized
+        else{
+            var message = document.getElementById("errorMessage");
+            message.innerHTML = "Code not recognized, please try again";
+            message.style.color="#FF0003";
+            return false;
+        }
+    }
+</script>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <!-- The three buttons on the navbar, portfolio, home, and about -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <!-- Home and about page link on the navigation bar (they are not linked so the user can't avoid putting in a code by clicking on one of the pages) -->
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Jumbotron is the big header on the top of the page -->
+<div class="jumbotron" style="background-color: #B7E3F4;">
+  <div class="container text-center">
+    <h1>My Portfolio</h1>      
+  </div>
+</div>
+  <p style="font-size: 20pt; margin: 8px;">Please enter an entry code to view this website.</p>
+  <!-- This is the entry box -->
+  <p style="font-size: 15pt; margin: 8px;">Code: <input id="password" type="password">
+  <span id="errorMessage"> </span></p>
+  <!-- Calls the check password function created earlier -->
+  <a href="portfolio.html" onclick="return checkpassword();">
+  <!-- Submit button in the form of a photo -->
+  <img src="/static/images/submit.png" style="zoom: 0.4; margin:  16px;" />
+  
+  </a>
+<!-- Footer with my linked email -->
+<footer class="container-fluid text-center">
+  <p><a href="mailto:pnbird5@icloud.com">pnbird5@icloud.com</a></p>
+</footer>
+
+</body>
+</html>

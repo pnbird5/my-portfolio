@@ -1,0 +1,108 @@
+<!-- About page, explaining my past experience with coding -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About Me</title>
+  <meta charset="utf-8">
+  <!-- From the template -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #B7F4E7;
+      padding: 25px;
+      position: absolute;
+      width:  100%;
+      bottom: 0;
+    }
+    img{
+      border: 15px solid #aabcfa; 
+
+
+    }
+  </style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <!-- Three navbar buttons, portflio, home, about -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <!-- Button linked with home page -->
+        <li><a href="portfolio.html">Home</a></li>
+        <!-- About page button listed as active -->
+        <li class="active"><a href="#">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- header -->
+<div class="jumbotron" style="background-color: #B7E3F4;">
+  <div class="container text-center">
+    <h1>About Me</h1>      
+    <p>And my coding experience</p>
+  </div>
+</div>
+  
+
+<!-- This page is split into two, one side bullet points one a large photo -->
+<div class="container-fluid bg-3 text-left">    
+  <h3>My Experience</h3><br>
+  <div class="row">
+    <!-- Left half of page -->
+    <div class="col-sm-6">
+      <ul style="font-size: 25px">
+        <!-- The <li> creates bullet points-->
+        <li>I first started coding around 2nd grade. I learned scratch (block coding software) with my school. I enjoyed it a lot, and took part in different electives to further my knowledge. </li>
+        <li>At some point, around 6-7th grade, I essentially mastered scratch, with <a href="https://scratch.mit.edu/projects/284277485/" target="_blank">platformer games</a> and other projects. I wanted to expand my coding knowledge, so I started taking lessons in python. 
+        </li>
+        <li>
+          At first, my main focus was videogame design. I spent most of my scratch time making them, so they were what I coded first in python. After learning the basics, I created games like Blackjack, Tic-Tac-Toe, and Hangman, where you play them in the terminal. 
+        </li>
+        <li>
+          After some terminal games, I got into some basic software coding. My most memorable project was a spell checker, that would take paragraphs and correct any misspelled words by adding, removing, and replacing letters.  
+        </li>
+        <li>
+          More recently, I started learning pgzero and pygame to create better games in python. I created a lot of minigames, each one focusing on a different aspect of pygame, and summed it all up with my Tower Defense game. 
+        </li>
+        <li>
+          I also expiremented with a Rasberry Pi a bit this year, creating a reminder system that would send me emails. 
+        </li>
+        <li>
+          For this summer, I plan to spend more time learning Unity. While 2D games in python are fun, I want to step it up with some unity, so by the time I start computer science at Riverdale, I should have my skills refined, and a strong knowledge of unity to start of 9th grade.
+        </li>
+      </ul>
+    </div>
+    <!-- Right half of page (image) -->
+    <div class="col-sm-6"> 
+      <img src="/static/images/codingphoto.jpg" class="img-responsive" style="width:90%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<!-- footer linked wtih email -->
+<footer class="container-fluid text-center">
+  <p><a href="mailto:pnbird5@icloud.com">pnbird5@icloud.com</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!-- This is the home page with each project and a description of them -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <!-- From the template -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #B7F4E7;
+      padding: 25px;
+      position: absolute;
+      width:  100%;
+      bottom: 0;
+    }
+  </style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <!-- Three navbar buttons, portfolio, home, about -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <!-- The home button is listed as active since that is the page the user is currently on -->
+        <li class="active"><a href="#">Home</a></li>
+        <!-- About page is linked -->
+        <li><a href="portfolioAbout.html">About</a></li>
+      </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Page header -->
+<div class="jumbotron" style="background-color: #B7E3F4;">
+  <div class="container text-center">
+    <h1>My Portfolio</h1>      
+  </div>
+</div>
+  
+<div class="container-fluid bg-3 text-center">    
+  <h3>Some of my Work</h3><br>
+  <div class="row">
+    <!-- col-sm-3 creates three spaces, one between each column, so it evenly spaces out four items -->
+    <div class="col-sm-3">
+      <!-- First project -->
+      <!-- <p style="font-size: 20pt"><a href="/TowerDefense">Click here to play tower defense!</a></p> -->
+      <!-- linked image -->
+      <img src="/static/images/TDphoto.png" class="img-responsive" style="width:70%; margin:auto" alt="Image">
+      <p style="font-size: 18pt"><a href="https://replit.com/@PhilipNegrin/TowerDefense?v=1" target="_blank">Click here to play Tower Defense</a></p>
+    </div>
+    <div class="col-sm-3"> 
+      <!-- Second project -->
+      <p style="font-size: 20pt">This Portfolio</p>
+      <img src="/static/images/portfolioS.png" class="img-responsive" style="width:80%; margin:auto" alt="Image">
+      <p style="font-size: 18pt"><a href="https://github.com/pnbird5/my-portfolio" target="_blank">Click here for the github repository</a></p>
+    </div>
+    <div class="col-sm-3"> 
+      <!-- Third project -->
+      <!-- <p style="font-size: 20pt"><a href="/AskExpert">Click here for Ask the Expert</a></p> -->
+      <img src="/static/images/AsktheExpert.png" class="img-responsive" style="width:70%; margin:auto" alt="Image">
+      <p style="font-size: 18pt"><a href="https://replit.com/@PhilipNegrin/Ask-the-Expert?v=1" target="_blank">Click here for Ask the Expert</a></p>
+    </div>
+    <div class="col-sm-3"> 
+      <!-- Fourth project -->
+      <p style="font-size: 20pt">Unity</p>
+      <img src="/static/images/unityS.png" class="img-responsive" style="width:60%; margin:auto" alt="Image">
+    </div>
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-3">
+      <!-- First project description -->
+      <p style="font-size: 16pt">This was my final pgzero game, a way to sum up everything I knew. I took inspiration from games like bloons, and spent around 3 weeks creating this. It involves 3 towers and enemies, and is probably my most complicated game and longest. It displays usage of classes, functions, dictionaries, loops, conditionals, as well as many other topics. It took a lot of coding knowledge, as well as the actual planning and logic portion of it. The majority of art was done by me, but I used some images online for the enemies. </p>
+    </div>
+    <div class="col-sm-3"> 
+      <!-- Second project description -->
+      <p style="font-size: 16pt">To express my knowledge in HTML and Java script I created this portfolio. I used a basic template for the framework, but the majority of the work is mine. While HTML and Javascript aren't a focus of mine, I know they are relevant and important in formatting and app/website creation, so I spent about 2 months learning about it and created this. It includes 3 pages, an entry page including an entry code, a home page (here) containing my projects, and an about page containing my coding expierence and plans for the future. </p>
+    </div>
+    <div class="col-sm-3"> 
+      <!-- Third project description -->
+      <p style="font-size: 16pt">Ask the Expert is a basic project I created earlier this year. I decided to show it because it shows a different interface I am familier with, TKinter. Ask the Expert is a basic database that has countries and their capitals. Users can also input countries and their capitals if they aren't already in the database. </p>
+    </div>
+    <div class="col-sm-3"> 
+      <!-- Fourth project description -->
+      <p style="font-size: 16pt">I started coding in Unity recently, and found it a lot of fun. I don't have a specific project to show, as I am just getting started by following a unity course. I plan to focus on unity for the entire summer, so I should be pretty refined by the start of 9th grade. I started using Unity because I enjoy creating videogames in python but the 2D software has restrictions, while Unity is essentially endless. Along with it I plan to start using blender, which I already have started to experiment with.</p>
+    </div>
+  </div>
+</div><br><br>
+<!-- Bottom footer with linked email -->
+<footer class="container-fluid text-center">
+  <p><a href="mailto:pnbird5@icloud.com">pnbird5@icloud.com</a></p>
+</footer>
+
+</body>
+</html>
